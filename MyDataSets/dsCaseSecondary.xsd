@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCaseSecondary" targetNamespace="http://www.tempuri.org/dsCaseSecondary.xsd" xmlns:mstns="http://www.tempuri.org/dsCaseSecondary.xsd" xmlns="http://www.tempuri.org/dsCaseSecondary.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCaseSecondary" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsCaseSecondary" msprop:Generator_UserDSName="dsCaseSecondary">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GetConversations" msprop:Generator_UserTableName="GetConversations" msprop:Generator_RowEvArgName="GetConversationsRowChangeEvent" msprop:Generator_TableVarName="tableGetConversations" msprop:Generator_TablePropName="GetConversations" msprop:Generator_RowDeletingName="GetConversationsRowDeleting" msprop:Generator_RowChangingName="GetConversationsRowChanging" msprop:Generator_RowDeletedName="GetConversationsRowDeleted" msprop:Generator_RowEvHandlerName="GetConversationsRowChangeEventHandler" msprop:Generator_RowChangedName="GetConversationsRowChanged" msprop:Generator_TableClassName="GetConversationsDataTable" msprop:Generator_RowClassName="GetConversationsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ConversID" msprop:Generator_ColumnVarNameInTable="columnConversID" msprop:Generator_ColumnPropNameInRow="ConversID" msprop:Generator_ColumnPropNameInTable="ConversIDColumn" msprop:Generator_UserColumnName="ConversID" type="xs:int" />
+              <xs:element name="CaseNum" msprop:Generator_ColumnVarNameInTable="columnCaseNum" msprop:Generator_ColumnPropNameInRow="CaseNum" msprop:Generator_ColumnPropNameInTable="CaseNumColumn" msprop:Generator_UserColumnName="CaseNum" type="xs:int" minOccurs="0" />
+              <xs:element name="ContactNum" msprop:Generator_ColumnVarNameInTable="columnContactNum" msprop:Generator_ColumnPropNameInRow="ContactNum" msprop:Generator_ColumnPropNameInTable="ContactNumColumn" msprop:Generator_UserColumnName="ContactNum" type="xs:int" minOccurs="0" />
+              <xs:element name="ConversDate" msprop:Generator_ColumnVarNameInTable="columnConversDate" msprop:Generator_ColumnPropNameInRow="ConversDate" msprop:Generator_ColumnPropNameInTable="ConversDateColumn" msprop:Generator_UserColumnName="ConversDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ContactName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnContactName" msprop:Generator_ColumnPropNameInRow="ContactName" msprop:Generator_ColumnPropNameInTable="ContactNameColumn" msprop:Generator_UserColumnName="ContactName" type="xs:string" minOccurs="0" />
+              <xs:element name="BriefSummary" msprop:Generator_ColumnVarNameInTable="columnBriefSummary" msprop:Generator_ColumnPropNameInRow="BriefSummary" msprop:Generator_ColumnPropNameInTable="BriefSummaryColumn" msprop:Generator_UserColumnName="BriefSummary" type="xs:string" minOccurs="0" />
+              <xs:element name="StaffName" msprop:Generator_ColumnVarNameInTable="columnStaffName" msprop:Generator_ColumnPropNameInRow="StaffName" msprop:Generator_ColumnPropNameInTable="StaffNameColumn" msprop:Generator_UserColumnName="StaffName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GetGrants" msprop:Generator_UserTableName="GetGrants" msprop:Generator_RowEvArgName="GetGrantsRowChangeEvent" msprop:Generator_TableVarName="tableGetGrants" msprop:Generator_TablePropName="GetGrants" msprop:Generator_RowDeletingName="GetGrantsRowDeleting" msprop:Generator_RowChangingName="GetGrantsRowChanging" msprop:Generator_RowDeletedName="GetGrantsRowDeleted" msprop:Generator_RowEvHandlerName="GetGrantsRowChangeEventHandler" msprop:Generator_RowChangedName="GetGrantsRowChanged" msprop:Generator_TableClassName="GetGrantsDataTable" msprop:Generator_RowClassName="GetGrantsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GrantIDtxt" msprop:Generator_ColumnVarNameInTable="columnGrantIDtxt" msprop:Generator_ColumnPropNameInRow="GrantIDtxt" msprop:Generator_ColumnPropNameInTable="GrantIDtxtColumn" msprop:Generator_UserColumnName="GrantIDtxt" type="xs:string" />
+              <xs:element name="CaseNum" msprop:Generator_ColumnVarNameInTable="columnCaseNum" msprop:Generator_ColumnPropNameInRow="CaseNum" msprop:Generator_ColumnPropNameInTable="CaseNumColumn" msprop:Generator_UserColumnName="CaseNum" type="xs:int" minOccurs="0" />
+              <xs:element name="TypeofGrant" msprop:Generator_ColumnVarNameInTable="columnTypeofGrant" msprop:Generator_ColumnPropNameInRow="TypeofGrant" msprop:Generator_ColumnPropNameInTable="TypeofGrantColumn" msprop:Generator_UserColumnName="TypeofGrant" type="xs:string" />
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CheckMailedDate" msprop:Generator_ColumnVarNameInTable="columnCheckMailedDate" msprop:Generator_ColumnPropNameInRow="CheckMailedDate" msprop:Generator_ColumnPropNameInTable="CheckMailedDateColumn" msprop:Generator_UserColumnName="CheckMailedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="GrantLatest" msprop:Generator_ColumnVarNameInTable="columnGrantLatest" msprop:Generator_ColumnPropNameInRow="GrantLatest" msprop:Generator_ColumnPropNameInTable="GrantLatestColumn" msprop:Generator_UserColumnName="GrantLatest" type="xs:string" minOccurs="0" />
+              <xs:element name="CongregationFinalReport" msprop:Generator_ColumnVarNameInTable="columnCongregationFinalReport" msprop:Generator_ColumnPropNameInRow="CongregationFinalReport" msprop:Generator_ColumnPropNameInTable="CongregationFinalReportColumn" msprop:Generator_UserColumnName="CongregationFinalReport" type="xs:string" minOccurs="0" />
+              <xs:element name="NextReportDue" msprop:Generator_ColumnVarNameInTable="columnNextReportDue" msprop:Generator_ColumnPropNameInRow="NextReportDue" msprop:Generator_ColumnPropNameInTable="NextReportDueColumn" msprop:Generator_UserColumnName="NextReportDue" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GetRecommendations" msprop:Generator_UserTableName="GetRecommendations" msprop:Generator_RowEvArgName="GetRecommendationsRowChangeEvent" msprop:Generator_TableVarName="tableGetRecommendations" msprop:Generator_TablePropName="GetRecommendations" msprop:Generator_RowDeletingName="GetRecommendationsRowDeleting" msprop:Generator_RowChangingName="GetRecommendationsRowChanging" msprop:Generator_RowDeletedName="GetRecommendationsRowDeleted" msprop:Generator_RowEvHandlerName="GetRecommendationsRowChangeEventHandler" msprop:Generator_RowChangedName="GetRecommendationsRowChanged" msprop:Generator_TableClassName="GetRecommendationsDataTable" msprop:Generator_RowClassName="GetRecommendationsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RecommendID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnRecommendID" msprop:Generator_ColumnPropNameInRow="RecommendID" msprop:Generator_ColumnPropNameInTable="RecommendIDColumn" msprop:Generator_UserColumnName="RecommendID" type="xs:int" />
+              <xs:element name="ResourceNum" msprop:Generator_ColumnVarNameInTable="columnResourceNum" msprop:Generator_ColumnPropNameInRow="ResourceNum" msprop:Generator_ColumnPropNameInTable="ResourceNumColumn" msprop:Generator_UserColumnName="ResourceNum" type="xs:int" minOccurs="0" />
+              <xs:element name="CaseNum" msprop:Generator_ColumnVarNameInTable="columnCaseNum" msprop:Generator_ColumnPropNameInRow="CaseNum" msprop:Generator_ColumnPropNameInTable="CaseNumColumn" msprop:Generator_UserColumnName="CaseNum" type="xs:int" minOccurs="0" />
+              <xs:element name="ConversNum" msprop:Generator_ColumnVarNameInTable="columnConversNum" msprop:Generator_ColumnPropNameInRow="ConversNum" msprop:Generator_ColumnPropNameInTable="ConversNumColumn" msprop:Generator_UserColumnName="ConversNum" type="xs:int" minOccurs="0" />
+              <xs:element name="GrantNum" msprop:Generator_ColumnVarNameInTable="columnGrantNum" msprop:Generator_ColumnPropNameInRow="GrantNum" msprop:Generator_ColumnPropNameInTable="GrantNumColumn" msprop:Generator_UserColumnName="GrantNum" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ResourceName" msprop:Generator_ColumnVarNameInTable="columnResourceName" msprop:Generator_ColumnPropNameInRow="ResourceName" msprop:Generator_ColumnPropNameInTable="ResourceNameColumn" msprop:Generator_UserColumnName="ResourceName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Active" msprop:Generator_ColumnVarNameInTable="columnActive" msprop:Generator_ColumnPropNameInRow="Active" msprop:Generator_ColumnPropNameInTable="ActiveColumn" msprop:Generator_UserColumnName="Active" type="xs:boolean" minOccurs="0" />
+              <xs:element name="RecommendDate" msprop:Generator_ColumnVarNameInTable="columnRecommendDate" msprop:Generator_ColumnPropNameInRow="RecommendDate" msprop:Generator_ColumnPropNameInTable="RecommendDateColumn" msprop:Generator_UserColumnName="RecommendDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Used" msprop:Generator_ColumnVarNameInTable="columnUsed" msprop:Generator_ColumnPropNameInRow="Used" msprop:Generator_ColumnPropNameInTable="UsedColumn" msprop:Generator_UserColumnName="Used" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RecommendStaffNum" msprop:Generator_ColumnVarNameInTable="columnRecommendStaffNum" msprop:Generator_ColumnPropNameInRow="RecommendStaffNum" msprop:Generator_ColumnPropNameInTable="RecommendStaffNumColumn" msprop:Generator_UserColumnName="RecommendStaffNum" type="xs:int" minOccurs="0" />
+              <xs:element name="OrgName" msprop:Generator_ColumnVarNameInTable="columnOrgName" msprop:Generator_ColumnPropNameInRow="OrgName" msprop:Generator_ColumnPropNameInTable="OrgNameColumn" msprop:Generator_UserColumnName="OrgName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaseName" msprop:Generator_ColumnVarNameInTable="columnCaseName" msprop:Generator_ColumnPropNameInRow="CaseName" msprop:Generator_ColumnPropNameInTable="CaseNameColumn" msprop:Generator_UserColumnName="CaseName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WhoRecommended" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnWhoRecommended" msprop:Generator_ColumnPropNameInRow="WhoRecommended" msprop:Generator_ColumnPropNameInTable="WhoRecommendedColumn" msprop:Generator_UserColumnName="WhoRecommended" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrgNum" msprop:Generator_ColumnVarNameInTable="columnOrgNum" msprop:Generator_ColumnPropNameInRow="OrgNum" msprop:Generator_ColumnPropNameInTable="OrgNumColumn" msprop:Generator_UserColumnName="OrgNum" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:GetGrants" />
+      <xs:field xpath="mstns:GrantIDtxt" />
+    </xs:unique>
+    <xs:unique name="GetRecommendations_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:GetRecommendations" />
+      <xs:field xpath="mstns:RecommendID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

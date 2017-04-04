@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsSrchOrg" targetNamespace="http://www.tempuri.org/dsSrchOrg.xsd" xmlns:mstns="http://www.tempuri.org/dsSrchOrg.xsd" xmlns="http://www.tempuri.org/dsSrchOrg.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsSrchOrg" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsSrchOrg" msprop:Generator_UserDSName="dsSrchOrg">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SrchOrg" msprop:Generator_UserTableName="SrchOrg" msprop:Generator_RowEvArgName="SrchOrgRowChangeEvent" msprop:Generator_TableVarName="tableSrchOrg" msprop:Generator_TablePropName="SrchOrg" msprop:Generator_RowDeletingName="SrchOrgRowDeleting" msprop:Generator_RowChangingName="SrchOrgRowChanging" msprop:Generator_RowDeletedName="SrchOrgRowDeleted" msprop:Generator_RowEvHandlerName="SrchOrgRowChangeEventHandler" msprop:Generator_TableClassName="SrchOrgDataTable" msprop:Generator_RowChangedName="SrchOrgRowChanged" msprop:Generator_RowClassName="SrchOrgRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrgID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnOrgID" msprop:Generator_ColumnPropNameInRow="OrgID" msprop:Generator_ColumnPropNameInTable="OrgIDColumn" msprop:Generator_UserColumnName="OrgID" type="xs:int" />
+              <xs:element name="OrgName" msprop:Generator_ColumnVarNameInTable="columnOrgName" msprop:Generator_ColumnPropNameInRow="OrgName" msprop:Generator_ColumnPropNameInTable="OrgNameColumn" msprop:Generator_UserColumnName="OrgName" type="xs:string" />
+              <xs:element name="City" msprop:Generator_ColumnVarNameInTable="columnCity" msprop:Generator_ColumnPropNameInRow="City" msprop:Generator_ColumnPropNameInTable="CityColumn" msprop:Generator_UserColumnName="City" type="xs:string" minOccurs="0" />
+              <xs:element name="Street" msprop:Generator_ColumnVarNameInTable="columnStreet" msprop:Generator_ColumnPropNameInRow="Street" msprop:Generator_ColumnPropNameInTable="StreetColumn" msprop:Generator_UserColumnName="Street" type="xs:string" minOccurs="0" />
+              <xs:element name="Phone" msprop:Generator_ColumnVarNameInTable="columnPhone" msprop:Generator_ColumnPropNameInRow="Phone" msprop:Generator_ColumnPropNameInTable="PhoneColumn" msprop:Generator_UserColumnName="Phone" type="xs:string" minOccurs="0" />
+              <xs:element name="Denomination" msprop:Generator_ColumnVarNameInTable="columnDenomination" msprop:Generator_ColumnPropNameInRow="Denomination" msprop:Generator_ColumnPropNameInTable="DenominationColumn" msprop:Generator_UserColumnName="Denomination" type="xs:string" minOccurs="0" />
+              <xs:element name="OrgType" msprop:Generator_ColumnVarNameInTable="columnOrgType" msprop:Generator_ColumnPropNameInRow="OrgType" msprop:Generator_ColumnPropNameInTable="OrgTypeColumn" msprop:Generator_UserColumnName="OrgType" type="xs:string" />
+              <xs:element name="SatelliteRegion" msprop:Generator_ColumnVarNameInTable="columnSatelliteRegion" msprop:Generator_ColumnPropNameInRow="SatelliteRegion" msprop:Generator_ColumnPropNameInTable="SatelliteRegionColumn" msprop:Generator_UserColumnName="SatelliteRegion" type="xs:string" minOccurs="0" />
+              <xs:element name="Programs" msprop:Generator_ColumnVarNameInTable="columnPrograms" msprop:Generator_ColumnPropNameInRow="Programs" msprop:Generator_ColumnPropNameInTable="ProgramsColumn" msprop:Generator_UserColumnName="Programs" type="xs:string" minOccurs="0" />
+              <xs:element name="Email" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_UserColumnName="Email" type="xs:string" minOccurs="0" />
+              <xs:element name="Zip" msprop:Generator_ColumnVarNameInTable="columnZip" msprop:Generator_ColumnPropNameInRow="Zip" msprop:Generator_ColumnPropNameInTable="ZipColumn" msprop:Generator_UserColumnName="Zip" type="xs:string" minOccurs="0" />
+              <xs:element name="OpenGrants" msprop:Generator_ColumnVarNameInTable="columnOpenGrants" msprop:Generator_ColumnPropNameInRow="OpenGrants" msprop:Generator_ColumnPropNameInTable="OpenGrantsColumn" msprop:Generator_UserColumnName="OpenGrants" type="xs:short" minOccurs="0" />
+              <xs:element name="HasWebsite" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnHasWebsite" msprop:Generator_ColumnPropNameInRow="HasWebsite" msprop:Generator_ColumnPropNameInTable="HasWebsiteColumn" msprop:Generator_UserColumnName="HasWebsite" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SrchOrgNonGrantable" msprop:Generator_TableClassName="SrchOrgNonGrantableDataTable" msprop:Generator_RowEvArgName="SrchOrgNonGrantableRowChangeEvent" msprop:Generator_TableVarName="tableSrchOrgNonGrantable" msprop:Generator_TablePropName="SrchOrgNonGrantable" msprop:Generator_RowDeletingName="SrchOrgNonGrantableRowDeleting" msprop:Generator_RowChangingName="SrchOrgNonGrantableRowChanging" msprop:Generator_RowEvHandlerName="SrchOrgNonGrantableRowChangeEventHandler" msprop:Generator_RowDeletedName="SrchOrgNonGrantableRowDeleted" msprop:Generator_UserTableName="SrchOrgNonGrantable" msprop:Generator_RowChangedName="SrchOrgNonGrantableRowChanged" msprop:Generator_RowClassName="SrchOrgNonGrantableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrgID" msprop:Generator_ColumnVarNameInTable="columnOrgID" msprop:Generator_ColumnPropNameInRow="OrgID" msprop:Generator_ColumnPropNameInTable="OrgIDColumn" msprop:Generator_UserColumnName="OrgID" type="xs:string" minOccurs="0" />
+              <xs:element name="OrgName" msprop:Generator_ColumnVarNameInTable="columnOrgName" msprop:Generator_ColumnPropNameInRow="OrgName" msprop:Generator_ColumnPropNameInTable="OrgNameColumn" msprop:Generator_UserColumnName="OrgName" type="xs:string" minOccurs="0" />
+              <xs:element name="City" msprop:Generator_ColumnVarNameInTable="columnCity" msprop:Generator_ColumnPropNameInRow="City" msprop:Generator_ColumnPropNameInTable="CityColumn" msprop:Generator_UserColumnName="City" type="xs:string" minOccurs="0" />
+              <xs:element name="Street" msprop:Generator_ColumnVarNameInTable="columnStreet" msprop:Generator_ColumnPropNameInRow="Street" msprop:Generator_ColumnPropNameInTable="StreetColumn" msprop:Generator_UserColumnName="Street" type="xs:string" minOccurs="0" />
+              <xs:element name="Phone" msprop:Generator_ColumnVarNameInTable="columnPhone" msprop:Generator_ColumnPropNameInRow="Phone" msprop:Generator_ColumnPropNameInTable="PhoneColumn" msprop:Generator_UserColumnName="Phone" type="xs:string" minOccurs="0" />
+              <xs:element name="Denomination" msprop:Generator_ColumnVarNameInTable="columnDenomination" msprop:Generator_ColumnPropNameInRow="Denomination" msprop:Generator_ColumnPropNameInTable="DenominationColumn" msprop:Generator_UserColumnName="Denomination" type="xs:string" minOccurs="0" />
+              <xs:element name="OrgType" msprop:Generator_ColumnVarNameInTable="columnOrgType" msprop:Generator_ColumnPropNameInRow="OrgType" msprop:Generator_ColumnPropNameInTable="OrgTypeColumn" msprop:Generator_UserColumnName="OrgType" type="xs:string" minOccurs="0" />
+              <xs:element name="SatelliteRegion" msprop:Generator_ColumnVarNameInTable="columnSatelliteRegion" msprop:Generator_ColumnPropNameInRow="SatelliteRegion" msprop:Generator_ColumnPropNameInTable="SatelliteRegionColumn" msprop:Generator_UserColumnName="SatelliteRegion" type="xs:string" minOccurs="0" />
+              <xs:element name="Programs" msprop:Generator_ColumnVarNameInTable="columnPrograms" msprop:Generator_ColumnPropNameInRow="Programs" msprop:Generator_ColumnPropNameInTable="ProgramsColumn" msprop:Generator_UserColumnName="Programs" type="xs:string" minOccurs="0" />
+              <xs:element name="Email" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_UserColumnName="Email" type="xs:string" minOccurs="0" />
+              <xs:element name="Zip" msprop:Generator_ColumnVarNameInTable="columnZip" msprop:Generator_ColumnPropNameInRow="Zip" msprop:Generator_ColumnPropNameInTable="ZipColumn" msprop:Generator_UserColumnName="Zip" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SrchOrg" />
+      <xs:field xpath="mstns:OrgID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

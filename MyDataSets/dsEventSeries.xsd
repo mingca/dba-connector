@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsEventSeries" targetNamespace="http://tempuri.org/dsEventSeries.xsd" xmlns:mstns="http://tempuri.org/dsEventSeries.xsd" xmlns="http://tempuri.org/dsEventSeries.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsEventSeries" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsEventSeries" msprop:Generator_DataSetName="dsEventSeries">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GetEventSeries" msprop:Generator_UserTableName="GetEventSeries" msprop:Generator_RowDeletedName="GetEventSeriesRowDeleted" msprop:Generator_RowChangedName="GetEventSeriesRowChanged" msprop:Generator_RowClassName="GetEventSeriesRow" msprop:Generator_RowChangingName="GetEventSeriesRowChanging" msprop:Generator_RowEvArgName="GetEventSeriesRowChangeEvent" msprop:Generator_RowEvHandlerName="GetEventSeriesRowChangeEventHandler" msprop:Generator_TableClassName="GetEventSeriesDataTable" msprop:Generator_TableVarName="tableGetEventSeries" msprop:Generator_RowDeletingName="GetEventSeriesRowDeleting" msprop:Generator_TablePropName="GetEventSeries">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EventID" msprop:Generator_UserColumnName="EventID" msprop:Generator_ColumnVarNameInTable="columnEventID" msprop:Generator_ColumnPropNameInRow="EventID" msprop:Generator_ColumnPropNameInTable="EventIDColumn" type="xs:short" />
+              <xs:element name="Registered" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Registered" msprop:Generator_ColumnVarNameInTable="columnRegistered" msprop:Generator_ColumnPropNameInRow="Registered" msprop:Generator_ColumnPropNameInTable="RegisteredColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsMainResourceExtra" targetNamespace="http://www.tempuri.org/dsMainResourceExtra.xsd" xmlns:mstns="http://www.tempuri.org/dsMainResourceExtra.xsd" xmlns="http://www.tempuri.org/dsMainResourceExtra.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsMainResourceExtra" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsMainResourceExtra" msprop:Generator_DataSetName="dsMainResourceExtra">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblResourceExtra" msprop:Generator_UserTableName="tblResourceExtra" msprop:Generator_RowDeletedName="tblResourceExtraRowDeleted" msprop:Generator_RowChangedName="tblResourceExtraRowChanged" msprop:Generator_RowClassName="tblResourceExtraRow" msprop:Generator_RowChangingName="tblResourceExtraRowChanging" msprop:Generator_RowEvArgName="tblResourceExtraRowChangeEvent" msprop:Generator_RowEvHandlerName="tblResourceExtraRowChangeEventHandler" msprop:Generator_TableClassName="tblResourceExtraDataTable" msprop:Generator_TableVarName="tabletblResourceExtra" msprop:Generator_RowDeletingName="tblResourceExtraRowDeleting" msprop:Generator_TablePropName="tblResourceExtra">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ResourceExtraID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="ResourceExtraID" msprop:Generator_ColumnPropNameInRow="ResourceExtraID" msprop:Generator_ColumnVarNameInTable="columnResourceExtraID" msprop:Generator_ColumnPropNameInTable="ResourceExtraIDColumn" type="xs:int" />
+              <xs:element name="ResourceNum" msprop:Generator_UserColumnName="ResourceNum" msprop:Generator_ColumnPropNameInRow="ResourceNum" msprop:Generator_ColumnVarNameInTable="columnResourceNum" msprop:Generator_ColumnPropNameInTable="ResourceNumColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LastName" msprop:Generator_UserColumnName="LastName" msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FirstName" msprop:Generator_UserColumnName="FirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Prefix" msprop:Generator_UserColumnName="Prefix" msprop:Generator_ColumnPropNameInRow="Prefix" msprop:Generator_ColumnVarNameInTable="columnPrefix" msprop:Generator_ColumnPropNameInTable="PrefixColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Middle" msprop:Generator_UserColumnName="Middle" msprop:Generator_ColumnPropNameInRow="Middle" msprop:Generator_ColumnVarNameInTable="columnMiddle" msprop:Generator_ColumnPropNameInTable="MiddleColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Suffix" msprop:Generator_UserColumnName="Suffix" msprop:Generator_ColumnPropNameInRow="Suffix" msprop:Generator_ColumnVarNameInTable="columnSuffix" msprop:Generator_ColumnPropNameInTable="SuffixColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AuthorEditor" msprop:Generator_UserColumnName="AuthorEditor" msprop:Generator_ColumnPropNameInRow="AuthorEditor" msprop:Generator_ColumnVarNameInTable="columnAuthorEditor" msprop:Generator_ColumnPropNameInTable="AuthorEditorColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Phone" msprop:Generator_UserColumnName="Phone" msprop:Generator_ColumnPropNameInRow="Phone" msprop:Generator_ColumnVarNameInTable="columnPhone" msprop:Generator_ColumnPropNameInTable="PhoneColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Fax" msprop:Generator_UserColumnName="Fax" msprop:Generator_ColumnPropNameInRow="Fax" msprop:Generator_ColumnVarNameInTable="columnFax" msprop:Generator_ColumnPropNameInTable="FaxColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EMail" msprop:Generator_UserColumnName="EMail" msprop:Generator_ColumnPropNameInRow="EMail" msprop:Generator_ColumnVarNameInTable="columnEMail" msprop:Generator_ColumnPropNameInTable="EMailColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="JobTitle" msprop:Generator_UserColumnName="JobTitle" msprop:Generator_ColumnPropNameInRow="JobTitle" msprop:Generator_ColumnVarNameInTable="columnJobTitle" msprop:Generator_ColumnPropNameInTable="JobTitleColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EventDate" msprop:Generator_UserColumnName="EventDate" msprop:Generator_ColumnPropNameInRow="EventDate" msprop:Generator_ColumnVarNameInTable="columnEventDate" msprop:Generator_ColumnPropNameInTable="EventDateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EventAnnual" msprop:Generator_UserColumnName="EventAnnual" msprop:Generator_ColumnPropNameInRow="EventAnnual" msprop:Generator_ColumnVarNameInTable="columnEventAnnual" msprop:Generator_ColumnPropNameInTable="EventAnnualColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Location" msprop:Generator_UserColumnName="Location" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnVarNameInTable="columnLocation" msprop:Generator_ColumnPropNameInTable="LocationColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Phone2" msprop:Generator_UserColumnName="Phone2" msprop:Generator_ColumnPropNameInRow="Phone2" msprop:Generator_ColumnVarNameInTable="columnPhone2" msprop:Generator_ColumnPropNameInTable="Phone2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Notes" msprop:Generator_UserColumnName="Notes" msprop:Generator_ColumnPropNameInRow="Notes" msprop:Generator_ColumnVarNameInTable="columnNotes" msprop:Generator_ColumnPropNameInTable="NotesColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Stamped" msprop:Generator_UserColumnName="Stamped" msprop:Generator_ColumnPropNameInRow="Stamped" msprop:Generator_ColumnVarNameInTable="columnStamped" msprop:Generator_ColumnPropNameInTable="StampedColumn" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tblResourceExtra" />
+      <xs:field xpath="mstns:ResourceExtraID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

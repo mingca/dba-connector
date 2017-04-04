@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsIntranet" targetNamespace="http://www.tempuri.org/dsIntranet.xsd" xmlns:mstns="http://www.tempuri.org/dsIntranet.xsd" xmlns="http://www.tempuri.org/dsIntranet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsIntranet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsIntranet" msprop:Generator_DataSetName="dsIntranet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblIntranet" msprop:Generator_UserTableName="tblIntranet" msprop:Generator_RowDeletedName="tblIntranetRowDeleted" msprop:Generator_RowChangedName="tblIntranetRowChanged" msprop:Generator_RowClassName="tblIntranetRow" msprop:Generator_RowChangingName="tblIntranetRowChanging" msprop:Generator_RowEvArgName="tblIntranetRowChangeEvent" msprop:Generator_RowEvHandlerName="tblIntranetRowChangeEventHandler" msprop:Generator_TableClassName="tblIntranetDataTable" msprop:Generator_TableVarName="tabletblIntranet" msprop:Generator_RowDeletingName="tblIntranetRowDeleting" msprop:Generator_TablePropName="tblIntranet">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FormID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="FormID" msprop:Generator_ColumnVarNameInTable="columnFormID" msprop:Generator_ColumnPropNameInRow="FormID" msprop:Generator_ColumnPropNameInTable="FormIDColumn" type="xs:short" />
+              <xs:element name="FormName" msprop:Generator_UserColumnName="FormName" msprop:Generator_ColumnVarNameInTable="columnFormName" msprop:Generator_ColumnPropNameInRow="FormName" msprop:Generator_ColumnPropNameInTable="FormNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FormDescription" msprop:Generator_UserColumnName="FormDescription" msprop:Generator_ColumnVarNameInTable="columnFormDescription" msprop:Generator_ColumnPropNameInRow="FormDescription" msprop:Generator_ColumnPropNameInTable="FormDescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FormCategory" msprop:Generator_UserColumnName="FormCategory" msprop:Generator_ColumnVarNameInTable="columnFormCategory" msprop:Generator_ColumnPropNameInRow="FormCategory" msprop:Generator_ColumnPropNameInTable="FormCategoryColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SatelliteRegion" msprop:Generator_UserColumnName="SatelliteRegion" msprop:Generator_ColumnVarNameInTable="columnSatelliteRegion" msprop:Generator_ColumnPropNameInRow="SatelliteRegion" msprop:Generator_ColumnPropNameInTable="SatelliteRegionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SortOrder" msprop:Generator_UserColumnName="SortOrder" msprop:Generator_ColumnVarNameInTable="columnSortOrder" msprop:Generator_ColumnPropNameInRow="SortOrder" msprop:Generator_ColumnPropNameInTable="SortOrderColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="URL" msprop:Generator_UserColumnName="URL" msprop:Generator_ColumnVarNameInTable="columnURL" msprop:Generator_ColumnPropNameInRow="URL" msprop:Generator_ColumnPropNameInTable="URLColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tblIntranet" />
+      <xs:field xpath="mstns:FormID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

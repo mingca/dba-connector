@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsMainResourceWarning" targetNamespace="http://tempuri.org/dsMainResourceWarning.xsd" xmlns:mstns="http://tempuri.org/dsMainResourceWarning.xsd" xmlns="http://tempuri.org/dsMainResourceWarning.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsMainResourceWarning" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsMainResourceWarning" msprop:Generator_DataSetName="dsMainResourceWarning">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MainResourceWarning" msprop:Generator_UserTableName="MainResourceWarning" msprop:Generator_RowDeletedName="MainResourceWarningRowDeleted" msprop:Generator_TableClassName="MainResourceWarningDataTable" msprop:Generator_RowChangedName="MainResourceWarningRowChanged" msprop:Generator_RowClassName="MainResourceWarningRow" msprop:Generator_RowChangingName="MainResourceWarningRowChanging" msprop:Generator_RowEvArgName="MainResourceWarningRowChangeEvent" msprop:Generator_RowEvHandlerName="MainResourceWarningRowChangeEventHandler" msprop:Generator_TablePropName="MainResourceWarning" msprop:Generator_TableVarName="tableMainResourceWarning" msprop:Generator_RowDeletingName="MainResourceWarningRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WarningID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="WarningID" msprop:Generator_ColumnPropNameInRow="WarningID" msprop:Generator_ColumnVarNameInTable="columnWarningID" msprop:Generator_ColumnPropNameInTable="WarningIDColumn" type="xs:int" />
+              <xs:element name="ResourceNum" msprop:Generator_UserColumnName="ResourceNum" msprop:Generator_ColumnPropNameInRow="ResourceNum" msprop:Generator_ColumnVarNameInTable="columnResourceNum" msprop:Generator_ColumnPropNameInTable="ResourceNumColumn" type="xs:int" />
+              <xs:element name="WarningDate" msprop:Generator_UserColumnName="WarningDate" msprop:Generator_ColumnPropNameInRow="WarningDate" msprop:Generator_ColumnVarNameInTable="columnWarningDate" msprop:Generator_ColumnPropNameInTable="WarningDateColumn" type="xs:dateTime" />
+              <xs:element name="WarningDescription" msprop:Generator_UserColumnName="WarningDescription" msprop:Generator_ColumnPropNameInRow="WarningDescription" msprop:Generator_ColumnVarNameInTable="columnWarningDescription" msprop:Generator_ColumnPropNameInTable="WarningDescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WarningStaffNum" msprop:Generator_UserColumnName="WarningStaffNum" msprop:Generator_ColumnPropNameInRow="WarningStaffNum" msprop:Generator_ColumnVarNameInTable="columnWarningStaffNum" msprop:Generator_ColumnPropNameInTable="WarningStaffNumColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AlbanNum" msprop:Generator_UserColumnName="AlbanNum" msprop:Generator_ColumnPropNameInRow="AlbanNum" msprop:Generator_ColumnVarNameInTable="columnAlbanNum" msprop:Generator_ColumnPropNameInTable="AlbanNumColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="WarningStaffTxt" msprop:Generator_UserColumnName="WarningStaffTxt" msprop:Generator_ColumnPropNameInRow="WarningStaffTxt" msprop:Generator_ColumnVarNameInTable="columnWarningStaffTxt" msprop:Generator_ColumnPropNameInTable="WarningStaffTxtColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WarningType" msprop:Generator_UserColumnName="WarningType" msprop:Generator_ColumnPropNameInRow="WarningType" msprop:Generator_ColumnVarNameInTable="columnWarningType" msprop:Generator_ColumnPropNameInTable="WarningTypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Stamped" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Stamped" msprop:Generator_ColumnPropNameInRow="Stamped" msprop:Generator_ColumnVarNameInTable="columnStamped" msprop:Generator_ColumnPropNameInTable="StampedColumn" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MainResourceWarning" />
+      <xs:field xpath="mstns:WarningID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

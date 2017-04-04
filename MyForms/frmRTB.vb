@@ -1,0 +1,6 @@
+Public Class frmRTB
+    'TO DISPLAY TEXT FROM SHORT REPORTS LIKE DEFINITIONS
+
+
+
+End Class

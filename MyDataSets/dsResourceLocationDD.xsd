@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsResourceLocationDD" targetNamespace="http://tempuri.org/dsResourceLocationDD.xsd" xmlns:mstns="http://tempuri.org/dsResourceLocationDD.xsd" xmlns="http://tempuri.org/dsResourceLocationDD.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="InfoCtr_beConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="InfoCtr_beConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.InfoCtr.My.MySettings.GlobalReference.Default.InfoCtr_beConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="luLocationStatusTableAdapter" GeneratorDataComponentClassName="luLocationStatusTableAdapter" Name="luLocationStatus" UserDataComponentName="luLocationStatusTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="InfoCtr_beConnectionString (MySettings)" DbObjectName="InfoCtr_be.dbo.luLocation" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillUserStatus" GenerateMethods="Fill" GenerateShortCommands="false" GeneratorSourceName="FillUserStatus" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="FillUserStatus">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        LocationSetupID, LocationName, SatelliteRegion, Area, SortFld
+FROM            luLocation
+WHERE        (DropDown = 'Status') AND (Area &lt;&gt; 'placement')
+UNION
+SELECT        0 AS LocationSetupID, '' AS Locationname, '' AS SatelliteRegion, '' AS Area, 0 AS SortFld
+FROM            luLocation AS luLocation_1
+ORDER BY SortFld</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="LocationSetupID" DataSetColumn="LocationSetupID" />
+              <Mapping SourceColumn="SatelliteRegion" DataSetColumn="SatelliteRegion" />
+              <Mapping SourceColumn="Area" DataSetColumn="Area" />
+              <Mapping SourceColumn="LocationName" DataSetColumn="LocationName" />
+              <Mapping SourceColumn="SortFld" DataSetColumn="SortFld" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="InfoCtr_beConnectionString (MySettings)" DbObjectName="InfoCtr_be.dbo.luLocation" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillStatusPlacement" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillStatusPlacement" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillStatusPlacement">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        LocationSetupID, LocationName, SatelliteRegion, Area, SortFld
+FROM            luLocation
+WHERE        (DropDown = 'Status') OR
+                         (DropDown = 'utility')
+UNION
+SELECT        0 AS LocationSetupID, '' AS Locationname, '' AS SatelliteRegion, '' AS Area, 0 AS SortFld
+FROM            luLocation AS luLocation_1
+ORDER BY SortFld</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="luLocationOverrideTableAdapter" GeneratorDataComponentClassName="luLocationOverrideTableAdapter" Name="luLocationOverride" UserDataComponentName="luLocationOverrideTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="InfoCtr_beConnectionString (MySettings)" DbObjectName="InfoCtr_be.dbo.luLocation" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillLocation" GenerateMethods="Fill" GenerateShortCommands="false" GeneratorSourceName="FillLocation" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="FillLocation">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT     LocationSetupID, LocationName, SatelliteRegion, Area, SortFld
+FROM         luLocation
+WHERE     (DropDown = 'Location') AND (SatelliteRegion = @Region OR
+                      SatelliteRegion = 'All')
+UNION
+SELECT     0 AS LocationSetupID, '' AS Locationname, '' AS SatelliteRegion, '' AS Area, 0 AS SortFld
+FROM         luLocation AS luLocation_1
+ORDER BY SortFld</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Region" ColumnName="SatelliteRegion" DataSourceName="InfoCtr_be.dbo.luLocation" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@Region" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="SatelliteRegion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="LocationSetupID" DataSetColumn="LocationSetupID" />
+              <Mapping SourceColumn="SatelliteRegion" DataSetColumn="SatelliteRegion" />
+              <Mapping SourceColumn="Area" DataSetColumn="Area" />
+              <Mapping SourceColumn="LocationName" DataSetColumn="LocationName" />
+              <Mapping SourceColumn="SortFld" DataSetColumn="SortFld" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="InfoCtr_beConnectionString (MySettings)" DbObjectName="InfoCtr_be.dbo.luLocation" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillLocationwUtility" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillLocationwUtility" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillLocationwUtility">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     LocationSetupID, LocationName, SatelliteRegion, Area, SortFld
+FROM         luLocation
+WHERE     (DropDown = 'Location') AND (SatelliteRegion = @Region OR
+                      SatelliteRegion = 'All') OR
+                      (DropDown = 'utility') AND (SatelliteRegion = @Region OR
+                      SatelliteRegion = 'All')
+ORDER BY SortFld</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Region" ColumnName="SatelliteRegion" DataSourceName="InfoCtr_be.dbo.luLocation" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@Region" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="SatelliteRegion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsResourceLocationDD" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsResourceLocationDD" msprop:Generator_UserDSName="dsResourceLocationDD">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="luLocationStatus" msprop:Generator_UserTableName="luLocationStatus" msprop:Generator_RowEvArgName="luLocationStatusRowChangeEvent" msprop:Generator_TableVarName="tableluLocationStatus" msprop:Generator_TablePropName="luLocationStatus" msprop:Generator_RowDeletingName="luLocationStatusRowDeleting" msprop:Generator_RowChangingName="luLocationStatusRowChanging" msprop:Generator_RowDeletedName="luLocationStatusRowDeleted" msprop:Generator_RowEvHandlerName="luLocationStatusRowChangeEventHandler" msprop:Generator_TableClassName="luLocationStatusDataTable" msprop:Generator_RowChangedName="luLocationStatusRowChanged" msprop:Generator_RowClassName="luLocationStatusRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LocationSetupID" msprop:Generator_ColumnVarNameInTable="columnLocationSetupID" msprop:Generator_ColumnPropNameInRow="LocationSetupID" msprop:Generator_ColumnPropNameInTable="LocationSetupIDColumn" msprop:Generator_UserColumnName="LocationSetupID" type="xs:int" minOccurs="0" />
+              <xs:element name="SatelliteRegion" msprop:Generator_ColumnVarNameInTable="columnSatelliteRegion" msprop:Generator_ColumnPropNameInRow="SatelliteRegion" msprop:Generator_ColumnPropNameInTable="SatelliteRegionColumn" msprop:Generator_UserColumnName="SatelliteRegion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Area" msprop:Generator_ColumnVarNameInTable="columnArea" msprop:Generator_ColumnPropNameInRow="Area" msprop:Generator_ColumnPropNameInTable="AreaColumn" msprop:Generator_UserColumnName="Area" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LocationName" msprop:Generator_ColumnVarNameInTable="columnLocationName" msprop:Generator_ColumnPropNameInRow="LocationName" msprop:Generator_ColumnPropNameInTable="LocationNameColumn" msprop:Generator_UserColumnName="LocationName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SortFld" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSortFld" msprop:Generator_ColumnPropNameInRow="SortFld" msprop:Generator_ColumnPropNameInTable="SortFldColumn" msprop:Generator_UserColumnName="SortFld" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="luLocationOverride" msprop:Generator_UserTableName="luLocationOverride" msprop:Generator_RowEvArgName="luLocationOverrideRowChangeEvent" msprop:Generator_TableVarName="tableluLocationOverride" msprop:Generator_TablePropName="luLocationOverride" msprop:Generator_RowDeletingName="luLocationOverrideRowDeleting" msprop:Generator_RowChangingName="luLocationOverrideRowChanging" msprop:Generator_RowDeletedName="luLocationOverrideRowDeleted" msprop:Generator_RowEvHandlerName="luLocationOverrideRowChangeEventHandler" msprop:Generator_TableClassName="luLocationOverrideDataTable" msprop:Generator_RowChangedName="luLocationOverrideRowChanged" msprop:Generator_RowClassName="luLocationOverrideRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LocationSetupID" msprop:Generator_ColumnVarNameInTable="columnLocationSetupID" msprop:Generator_ColumnPropNameInRow="LocationSetupID" msprop:Generator_ColumnPropNameInTable="LocationSetupIDColumn" msprop:Generator_UserColumnName="LocationSetupID" type="xs:int" minOccurs="0" />
+              <xs:element name="SatelliteRegion" msprop:Generator_ColumnVarNameInTable="columnSatelliteRegion" msprop:Generator_ColumnPropNameInRow="SatelliteRegion" msprop:Generator_ColumnPropNameInTable="SatelliteRegionColumn" msprop:Generator_UserColumnName="SatelliteRegion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Area" msprop:Generator_ColumnVarNameInTable="columnArea" msprop:Generator_ColumnPropNameInRow="Area" msprop:Generator_ColumnPropNameInTable="AreaColumn" msprop:Generator_UserColumnName="Area" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LocationName" msprop:Generator_ColumnVarNameInTable="columnLocationName" msprop:Generator_ColumnPropNameInRow="LocationName" msprop:Generator_ColumnPropNameInTable="LocationNameColumn" msprop:Generator_UserColumnName="LocationName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SortFld" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSortFld" msprop:Generator_ColumnPropNameInRow="SortFld" msprop:Generator_ColumnPropNameInTable="SortFldColumn" msprop:Generator_UserColumnName="SortFld" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

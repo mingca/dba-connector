@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="dsResourceExtra" targetNamespace="http://www.tempuri.org/dsResourceExtra.xsd" xmlns:mstns="http://www.tempuri.org/dsResourceExtra.xsd" xmlns="http://www.tempuri.org/dsResourceExtra.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="dsResourceExtra" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="tblResourceExtra">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ExtraID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="ResourceNum" type="xs:int" minOccurs="0" />
+              <xs:element name="LastName" type="xs:string" minOccurs="0" />
+              <xs:element name="FirstName" type="xs:string" minOccurs="0" />
+              <xs:element name="Prefix" type="xs:string" minOccurs="0" />
+              <xs:element name="Middle" type="xs:string" minOccurs="0" />
+              <xs:element name="Suffix" type="xs:string" minOccurs="0" />
+              <xs:element name="AuthorEditor" type="xs:string" minOccurs="0" />
+              <xs:element name="Phone" type="xs:string" minOccurs="0" />
+              <xs:element name="Fax" type="xs:string" minOccurs="0" />
+              <xs:element name="EMail" type="xs:string" minOccurs="0" />
+              <xs:element name="JobTitle" type="xs:string" minOccurs="0" />
+              <xs:element name="EventDate" type="xs:string" minOccurs="0" />
+              <xs:element name="EventAnnual" type="xs:string" minOccurs="0" />
+              <xs:element name="Location" type="xs:string" minOccurs="0" />
+              <xs:element name="Phone2" type="xs:string" minOccurs="0" />
+              <xs:element name="Notes" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tblResourceExtra" />
+      <xs:field xpath="mstns:ExtraID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="InfoCtr_beConnectionString">
+      <ConnectionProperties>
+        <ConnectString>Data Source=SOLOMON;Initial Catalog=InfoCtr_be;Integrated Security=True</ConnectString>
+        <DataProvider>SQL</DataProvider>
+      </ConnectionProperties>
+      <rd:DataSourceID>4308d035-9507-4da5-b257-899fa5ae9109</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <BottomMargin>1in</BottomMargin>
+  <RightMargin>1in</RightMargin>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <ReportItems>
+      <Matrix Name="matrix1">
+        <MatrixColumns>
+          <MatrixColumn>
+            <Width>1.625in</Width>
+          </MatrixColumn>
+        </MatrixColumns>
+        <Left>0.125in</Left>
+        <RowGroupings>
+          <RowGrouping>
+            <Width>1.625in</Width>
+            <DynamicRows>
+              <ReportItems>
+                <Textbox Name="textbox3">
+                  <rd:DefaultName>textbox3</rd:DefaultName>
+                  <ZIndex>1</ZIndex>
+                  <Style>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingBottom>2pt</PaddingBottom>
+                    <PaddingRight>2pt</PaddingRight>
+                    <PaddingTop>2pt</PaddingTop>
+                  </Style>
+                  <CanGrow>true</CanGrow>
+                  <Value />
+                </Textbox>
+              </ReportItems>
+              <Grouping Name="matrix1_RowGroup1">
+                <GroupExpressions>
+                  <GroupExpression />
+                </GroupExpressions>
+              </Grouping>
+            </DynamicRows>
+          </RowGrouping>
+        </RowGroupings>
+        <ColumnGroupings>
+          <ColumnGrouping>
+            <DynamicColumns>
+              <ReportItems>
+                <Textbox Name="textbox2">
+                  <rd:DefaultName>textbox2</rd:DefaultName>
+                  <ZIndex>2</ZIndex>
+                  <Style>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingBottom>2pt</PaddingBottom>
+                    <PaddingRight>2pt</PaddingRight>
+                    <PaddingTop>2pt</PaddingTop>
+                  </Style>
+                  <CanGrow>true</CanGrow>
+                  <Value />
+                </Textbox>
+              </ReportItems>
+              <Grouping Name="matrix1_ColumnGroup1">
+                <GroupExpressions>
+                  <GroupExpression />
+                </GroupExpressions>
+              </Grouping>
+            </DynamicColumns>
+            <Height>0.8125in</Height>
+          </ColumnGrouping>
+        </ColumnGroupings>
+        <Top>0.25in</Top>
+        <ZIndex>1</ZIndex>
+        <Width>3.25in</Width>
+        <Corner>
+          <ReportItems>
+            <Textbox Name="textbox1">
+              <rd:DefaultName>textbox1</rd:DefaultName>
+              <ZIndex>3</ZIndex>
+              <Style>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingBottom>2pt</PaddingBottom>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+              </Style>
+              <CanGrow>true</CanGrow>
+              <Value />
+            </Textbox>
+          </ReportItems>
+        </Corner>
+        <Height>1.625in</Height>
+        <MatrixRows>
+          <MatrixRow>
+            <Height>0.8125in</Height>
+            <MatrixCells>
+              <MatrixCell>
+                <ReportItems>
+                  <Textbox Name="textbox4">
+                    <rd:DefaultName>textbox4</rd:DefaultName>
+                    <Style>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingBottom>2pt</PaddingBottom>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                    </Style>
+                    <CanGrow>true</CanGrow>
+                    <Value />
+                  </Textbox>
+                </ReportItems>
+              </MatrixCell>
+            </MatrixCells>
+          </MatrixRow>
+        </MatrixRows>
+      </Matrix>
+      <Table Name="table1">
+        <Footer>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox11">
+                      <rd:DefaultName>textbox11</rd:DefaultName>
+                      <ZIndex>5</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox12">
+                      <rd:DefaultName>textbox12</rd:DefaultName>
+                      <ZIndex>4</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox13">
+                      <rd:DefaultName>textbox13</rd:DefaultName>
+                      <ZIndex>3</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.5in</Height>
+            </TableRow>
+          </TableRows>
+        </Footer>
+        <Left>3.5in</Left>
+        <Top>0.25in</Top>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox8">
+                      <rd:DefaultName>textbox8</rd:DefaultName>
+                      <ZIndex>2</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox9">
+                      <rd:DefaultName>textbox9</rd:DefaultName>
+                      <ZIndex>1</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox10">
+                      <rd:DefaultName>textbox10</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.5in</Height>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <Header>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox5">
+                      <rd:DefaultName>textbox5</rd:DefaultName>
+                      <ZIndex>8</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox6">
+                      <rd:DefaultName>textbox6</rd:DefaultName>
+                      <ZIndex>7</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox7">
+                      <rd:DefaultName>textbox7</rd:DefaultName>
+                      <ZIndex>6</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.5in</Height>
+            </TableRow>
+          </TableRows>
+        </Header>
+        <TableColumns>
+          <TableColumn>
+            <Width>1in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1in</Width>
+          </TableColumn>
+        </TableColumns>
+        <Height>1.5in</Height>
+      </Table>
+    </ReportItems>
+    <Height>2in</Height>
+  </Body>
+  <rd:ReportID>0fa7d53e-5847-426f-ae84-234b99f01b7d</rd:ReportID>
+  <LeftMargin>1in</LeftMargin>
+  <DataSets>
+    <DataSet Name="dsrptRegistration_RptRegistrations">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>dsrptRegistration</rd:DataSetName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>RptRegistrationsTableAdapter</rd:TableAdapterName>
+        <rd:TableName>RptRegistrations</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>dbo.RptRegistrations</CommandText>
+        <DataSourceName>InfoCtr_beConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="EventID">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>EventID</DataField>
+        </Field>
+        <Field Name="EventName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>EventName</DataField>
+        </Field>
+        <Field Name="FirstDate">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>FirstDate</DataField>
+        </Field>
+        <Field Name="DateTxt">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>DateTxt</DataField>
+        </Field>
+        <Field Name="Time">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Time</DataField>
+        </Field>
+        <Field Name="Instructor">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Instructor</DataField>
+        </Field>
+        <Field Name="LocationName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>LocationName</DataField>
+        </Field>
+        <Field Name="Address1">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Address1</DataField>
+        </Field>
+        <Field Name="City">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>City</DataField>
+        </Field>
+        <Field Name="Fee">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Fee</DataField>
+        </Field>
+        <Field Name="Maximum">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Maximum</DataField>
+        </Field>
+        <Field Name="Caterer">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Caterer</DataField>
+        </Field>
+        <Field Name="EventNote">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>EventNote</DataField>
+        </Field>
+        <Field Name="TypeofEvent">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>TypeofEvent</DataField>
+        </Field>
+        <Field Name="LocationPhone">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>LocationPhone</DataField>
+        </Field>
+        <Field Name="LocationContact">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>LocationContact</DataField>
+        </Field>
+        <Field Name="CatererPhone">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CatererPhone</DataField>
+        </Field>
+        <Field Name="SatelliteRegion">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>SatelliteRegion</DataField>
+        </Field>
+        <Field Name="RegDate">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>RegDate</DataField>
+        </Field>
+        <Field Name="FeePaid">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>FeePaid</DataField>
+        </Field>
+        <Field Name="PayDate">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>PayDate</DataField>
+        </Field>
+        <Field Name="Confirmation">
+          <rd:TypeName>System.Boolean</rd:TypeName>
+          <DataField>Confirmation</DataField>
+        </Field>
+        <Field Name="Information">
+          <rd:TypeName>System.Boolean</rd:TypeName>
+          <DataField>Information</DataField>
+        </Field>
+        <Field Name="Nametag">
+          <rd:TypeName>System.Boolean</rd:TypeName>
+          <DataField>Nametag</DataField>
+        </Field>
+        <Field Name="Attended">
+          <rd:TypeName>System.Boolean</rd:TypeName>
+          <DataField>Attended</DataField>
+        </Field>
+        <Field Name="Note">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Note</DataField>
+        </Field>
+        <Field Name="ClergyLay">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ClergyLay</DataField>
+        </Field>
+        <Field Name="PersonalCongregational">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>PersonalCongregational</DataField>
+        </Field>
+        <Field Name="ExistingCommittee">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ExistingCommittee</DataField>
+        </Field>
+        <Field Name="MaleFemale">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>MaleFemale</DataField>
+        </Field>
+        <Field Name="Questions">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Questions</DataField>
+        </Field>
+        <Field Name="PaymentMethod">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>PaymentMethod</DataField>
+        </Field>
+        <Field Name="Cancelled">
+          <rd:TypeName>System.Boolean</rd:TypeName>
+          <DataField>Cancelled</DataField>
+        </Field>
+        <Field Name="ContactID">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>ContactID</DataField>
+        </Field>
+        <Field Name="Prefix">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Prefix</DataField>
+        </Field>
+        <Field Name="FirstName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>FirstName</DataField>
+        </Field>
+        <Field Name="Lastname">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Lastname</DataField>
+        </Field>
+        <Field Name="Suffix">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Suffix</DataField>
+        </Field>
+        <Field Name="OrgName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>OrgName</DataField>
+        </Field>
+        <Field Name="Street">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Street</DataField>
+        </Field>
+        <Field Name="CityStateZip">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CityStateZip</DataField>
+        </Field>
+        <Field Name="OrgID">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>OrgID</DataField>
+        </Field>
+        <Field Name="MailTo">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>MailTo</DataField>
+        </Field>
+        <Field Name="HomePhone">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>HomePhone</DataField>
+        </Field>
+        <Field Name="Email">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Email</DataField>
+        </Field>
+        <Field Name="OrgandCity">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>OrgandCity</DataField>
+        </Field>
+        <Field Name="Denomination">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Denomination</DataField>
+        </Field>
+        <Field Name="Attendance">
+          <rd:TypeName>System.Int16</rd:TypeName>
+          <DataField>Attendance</DataField>
+        </Field>
+        <Field Name="OrgPhone">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>OrgPhone</DataField>
+        </Field>
+        <Field Name="RegistrationID">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>RegistrationID</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <Width>6.5in</Width>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <Language>en-US</Language>
+  <TopMargin>1in</TopMargin>
+</Report>

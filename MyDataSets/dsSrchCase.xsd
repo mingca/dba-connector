@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsSrchCase" targetNamespace="http://www.tempuri.org/dsSrchCase.xsd" xmlns:mstns="http://www.tempuri.org/dsSrchCase.xsd" xmlns="http://www.tempuri.org/dsSrchCase.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsSrchCase" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsSrchCase" msprop:Generator_UserDSName="dsSrchCase">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SrchCases" msprop:Generator_UserTableName="SrchCases" msprop:Generator_RowEvArgName="SrchCasesRowChangeEvent" msprop:Generator_TableVarName="tableSrchCases" msprop:Generator_TablePropName="SrchCases" msprop:Generator_RowDeletingName="SrchCasesRowDeleting" msprop:Generator_RowChangingName="SrchCasesRowChanging" msprop:Generator_RowDeletedName="SrchCasesRowDeleted" msprop:Generator_RowEvHandlerName="SrchCasesRowChangeEventHandler" msprop:Generator_TableClassName="SrchCasesDataTable" msprop:Generator_RowChangedName="SrchCasesRowChanged" msprop:Generator_RowClassName="SrchCasesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CaseID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnCaseID" msprop:Generator_ColumnPropNameInRow="CaseID" msprop:Generator_ColumnPropNameInTable="CaseIDColumn" msprop:Generator_UserColumnName="CaseID" type="xs:int" />
+              <xs:element name="OrgNum" msprop:Generator_ColumnVarNameInTable="columnOrgNum" msprop:Generator_ColumnPropNameInRow="OrgNum" msprop:Generator_ColumnPropNameInTable="OrgNumColumn" msprop:Generator_UserColumnName="OrgNum" type="xs:int" minOccurs="0" />
+              <xs:element name="CaseName" msprop:Generator_ColumnVarNameInTable="columnCaseName" msprop:Generator_ColumnPropNameInRow="CaseName" msprop:Generator_ColumnPropNameInTable="CaseNameColumn" msprop:Generator_UserColumnName="CaseName" type="xs:string" minOccurs="0" />
+              <xs:element name="OrgandCity" msprop:Generator_ColumnVarNameInTable="columnOrgandCity" msprop:Generator_ColumnPropNameInRow="OrgandCity" msprop:Generator_ColumnPropNameInTable="OrgandCityColumn" msprop:Generator_UserColumnName="OrgandCity" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:string" minOccurs="0" />
+              <xs:element name="StatusNum" msprop:Generator_ColumnVarNameInTable="columnStatusNum" msprop:Generator_ColumnPropNameInRow="StatusNum" msprop:Generator_ColumnPropNameInTable="StatusNumColumn" msprop:Generator_UserColumnName="StatusNum" type="xs:short" minOccurs="0" />
+              <xs:element name="LastCall" msprop:Generator_ColumnVarNameInTable="columnLastCall" msprop:Generator_ColumnPropNameInRow="LastCall" msprop:Generator_ColumnPropNameInTable="LastCallColumn" msprop:Generator_UserColumnName="LastCall" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CaseMgr" msprop:Generator_ColumnVarNameInTable="columnCaseMgr" msprop:Generator_ColumnPropNameInRow="CaseMgr" msprop:Generator_ColumnPropNameInTable="CaseMgrColumn" msprop:Generator_UserColumnName="CaseMgr" type="xs:string" minOccurs="0" />
+              <xs:element name="Phone" msprop:Generator_ColumnVarNameInTable="columnPhone" msprop:Generator_ColumnPropNameInRow="Phone" msprop:Generator_ColumnPropNameInTable="PhoneColumn" msprop:Generator_UserColumnName="Phone" type="xs:string" minOccurs="0" />
+              <xs:element name="Resources" msprop:Generator_ColumnVarNameInTable="columnResources" msprop:Generator_ColumnPropNameInRow="Resources" msprop:Generator_ColumnPropNameInTable="ResourcesColumn" msprop:Generator_UserColumnName="Resources" type="xs:string" minOccurs="0" />
+              <xs:element name="FromCRG" msprop:Generator_ColumnVarNameInTable="columnFromCRG" msprop:Generator_ColumnPropNameInRow="FromCRG" msprop:Generator_ColumnPropNameInTable="FromCRGColumn" msprop:Generator_UserColumnName="FromCRG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CRGConsultingOrg" msprop:Generator_ColumnVarNameInTable="columnCRGConsultingOrg" msprop:Generator_ColumnPropNameInRow="CRGConsultingOrg" msprop:Generator_ColumnPropNameInTable="CRGConsultingOrgColumn" msprop:Generator_UserColumnName="CRGConsultingOrg" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SrchCases" />
+      <xs:field xpath="mstns:CaseID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

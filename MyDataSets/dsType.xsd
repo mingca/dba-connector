@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsType" targetNamespace="http://www.tempuri.org/dsType.xsd" xmlns:mstns="http://www.tempuri.org/dsType.xsd" xmlns="http://www.tempuri.org/dsType.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="InfoCtr_beConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="InfoCtr_beConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.InfoCtr.My.MySettings.GlobalReference.Default.InfoCtr_beConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tTypeTableAdapter" GeneratorDataComponentClassName="tTypeTableAdapter" Name="tType" UserDataComponentName="tTypeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="InfoCtr_beConnectionString (MySettings)" DbObjectName="InfoCtr_be.dbo.luResourceType" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ResourceTypeID, ResourceTypeName AS ResourceType
+FROM            luResourceType
+WHERE        (MasterType = 0) AND (Active = 1)
+ORDER BY ResourceType</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ResourceTypeID" DataSetColumn="ResourceTypeID" />
+              <Mapping SourceColumn="ResourceType" DataSetColumn="ResourceType" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tSubtypeTableAdapter" GeneratorDataComponentClassName="tSubtypeTableAdapter" Name="tSubtype" UserDataComponentName="tSubtypeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="InfoCtr_beConnectionString (MySettings)" DbObjectName="InfoCtr_be.dbo.luResourceType" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        MasterType AS MasterID, ResourceTypeID, ResourceTypeName AS ResourceSubType
+FROM            luResourceType
+WHERE        (MasterType &gt; 0) AND (Active = 1)
+ORDER BY ResourceSubType</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MasterID" DataSetColumn="MasterID" />
+              <Mapping SourceColumn="ResourceTypeID" DataSetColumn="ResourceTypeID" />
+              <Mapping SourceColumn="ResourceSubType" DataSetColumn="ResourceSubType" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsType" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsType" msprop:Generator_UserDSName="dsType">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tType" msprop:Generator_TableClassName="tTypeDataTable" msprop:Generator_TableVarName="tabletType" msprop:Generator_TablePropName="tType" msprop:Generator_RowDeletingName="tTypeRowDeleting" msprop:Generator_RowChangingName="tTypeRowChanging" msprop:Generator_RowEvHandlerName="tTypeRowChangeEventHandler" msprop:Generator_RowDeletedName="tTypeRowDeleted" msprop:Generator_UserTableName="tType" msprop:Generator_RowChangedName="tTypeRowChanged" msprop:Generator_RowEvArgName="tTypeRowChangeEvent" msprop:Generator_RowClassName="tTypeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ResourceTypeID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnResourceTypeID" msprop:Generator_ColumnPropNameInRow="ResourceTypeID" msprop:Generator_ColumnPropNameInTable="ResourceTypeIDColumn" msprop:Generator_UserColumnName="ResourceTypeID" type="xs:int" />
+              <xs:element name="ResourceType" msprop:Generator_ColumnVarNameInTable="columnResourceType" msprop:Generator_ColumnPropNameInRow="ResourceType" msprop:Generator_ColumnPropNameInTable="ResourceTypeColumn" msprop:Generator_UserColumnName="ResourceType">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tSubtype" msprop:Generator_TableClassName="tSubtypeDataTable" msprop:Generator_TableVarName="tabletSubtype" msprop:Generator_TablePropName="tSubtype" msprop:Generator_RowDeletingName="tSubtypeRowDeleting" msprop:Generator_RowChangingName="tSubtypeRowChanging" msprop:Generator_RowEvHandlerName="tSubtypeRowChangeEventHandler" msprop:Generator_RowDeletedName="tSubtypeRowDeleted" msprop:Generator_UserTableName="tSubtype" msprop:Generator_RowChangedName="tSubtypeRowChanged" msprop:Generator_RowEvArgName="tSubtypeRowChangeEvent" msprop:Generator_RowClassName="tSubtypeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MasterID" msprop:Generator_ColumnVarNameInTable="columnMasterID" msprop:Generator_ColumnPropNameInRow="MasterID" msprop:Generator_ColumnPropNameInTable="MasterIDColumn" msprop:Generator_UserColumnName="MasterID" type="xs:int" minOccurs="0" />
+              <xs:element name="ResourceTypeID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnResourceTypeID" msprop:Generator_ColumnPropNameInRow="ResourceTypeID" msprop:Generator_ColumnPropNameInTable="ResourceTypeIDColumn" msprop:Generator_UserColumnName="ResourceTypeID" type="xs:int" />
+              <xs:element name="ResourceSubType" msprop:Generator_ColumnVarNameInTable="columnResourceSubType" msprop:Generator_ColumnPropNameInRow="ResourceSubType" msprop:Generator_ColumnPropNameInTable="ResourceSubTypeColumn" msprop:Generator_UserColumnName="ResourceSubType">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tType" />
+      <xs:field xpath="mstns:ResourceTypeID" />
+    </xs:unique>
+    <xs:unique name="tSubtype_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tSubtype" />
+      <xs:field xpath="mstns:ResourceTypeID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="relTypeSubtype" msdata:parent="tType" msdata:child="tSubtype" msdata:parentkey="ResourceTypeID" msdata:childkey="MasterID" msprop:Generator_UserChildTable="tSubtype" msprop:Generator_ChildPropName="GettSubtypeRows" msprop:Generator_UserRelationName="relTypeSubtype" msprop:Generator_ParentPropName="tTypeRow" msprop:Generator_RelationVarName="relationrelTypeSubtype" msprop:Generator_UserParentTable="tType" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

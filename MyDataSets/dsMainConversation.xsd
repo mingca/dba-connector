@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsMainConversation" targetNamespace="http://www.tempuri.org/dsMainConversation.xsd" xmlns:mstns="http://www.tempuri.org/dsMainConversation.xsd" xmlns="http://www.tempuri.org/dsMainConversation.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsMainConversation" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsMainConversation" msprop:Generator_UserDSName="dsMainConversation">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MainConversation" msprop:Generator_TableClassName="MainConversationDataTable" msprop:Generator_RowEvArgName="MainConversationRowChangeEvent" msprop:Generator_TableVarName="tableMainConversation" msprop:Generator_TablePropName="MainConversation" msprop:Generator_RowDeletingName="MainConversationRowDeleting" msprop:Generator_UserTableName="MainConversation" msprop:Generator_RowChangingName="MainConversationRowChanging" msprop:Generator_RowDeletedName="MainConversationRowDeleted" msprop:Generator_RowChangedName="MainConversationRowChanged" msprop:Generator_RowEvHandlerName="MainConversationRowChangeEventHandler" msprop:Generator_RowClassName="MainConversationRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ConversID" msprop:Generator_ColumnVarNameInTable="columnConversID" msprop:Generator_ColumnPropNameInRow="ConversID" msprop:Generator_ColumnPropNameInTable="ConversIDColumn" msprop:Generator_UserColumnName="ConversID" type="xs:int" />
+              <xs:element name="OrgNum" msprop:Generator_ColumnVarNameInTable="columnOrgNum" msprop:Generator_ColumnPropNameInRow="OrgNum" msprop:Generator_ColumnPropNameInTable="OrgNumColumn" msprop:Generator_UserColumnName="OrgNum" type="xs:int" minOccurs="0" />
+              <xs:element name="CaseNum" msprop:Generator_ColumnVarNameInTable="columnCaseNum" msprop:Generator_ColumnPropNameInRow="CaseNum" msprop:Generator_ColumnPropNameInTable="CaseNumColumn" msprop:Generator_UserColumnName="CaseNum" type="xs:int" minOccurs="0" />
+              <xs:element name="ContactNum" msprop:Generator_ColumnVarNameInTable="columnContactNum" msprop:Generator_ColumnPropNameInRow="ContactNum" msprop:Generator_ColumnPropNameInTable="ContactNumColumn" msprop:Generator_UserColumnName="ContactNum" type="xs:int" minOccurs="0" />
+              <xs:element name="ConversDate" msprop:Generator_ColumnVarNameInTable="columnConversDate" msprop:Generator_ColumnPropNameInRow="ConversDate" msprop:Generator_ColumnPropNameInTable="ConversDateColumn" msprop:Generator_UserColumnName="ConversDate" type="xs:date" minOccurs="0" />
+              <xs:element name="StaffNum" msprop:Generator_ColumnVarNameInTable="columnStaffNum" msprop:Generator_ColumnPropNameInRow="StaffNum" msprop:Generator_ColumnPropNameInTable="StaffNumColumn" msprop:Generator_UserColumnName="StaffNum" type="xs:int" minOccurs="0" />
+              <xs:element name="ModeofContact" msprop:Generator_ColumnVarNameInTable="columnModeofContact" msprop:Generator_ColumnPropNameInRow="ModeofContact" msprop:Generator_ColumnPropNameInTable="ModeofContactColumn" msprop:Generator_UserColumnName="ModeofContact" type="xs:string" minOccurs="0" />
+              <xs:element name="BriefSummary" msprop:Generator_ColumnVarNameInTable="columnBriefSummary" msprop:Generator_ColumnPropNameInRow="BriefSummary" msprop:Generator_ColumnPropNameInTable="BriefSummaryColumn" msprop:Generator_UserColumnName="BriefSummary" type="xs:string" minOccurs="0" />
+              <xs:element name="CRGNum" msprop:Generator_ColumnVarNameInTable="columnCRGNum" msprop:Generator_ColumnPropNameInRow="CRGNum" msprop:Generator_ColumnPropNameInTable="CRGNumColumn" msprop:Generator_UserColumnName="CRGNum" type="xs:int" minOccurs="0" />
+              <xs:element name="Notes" msprop:Generator_ColumnVarNameInTable="columnNotes" msprop:Generator_ColumnPropNameInRow="Notes" msprop:Generator_ColumnPropNameInTable="NotesColumn" msprop:Generator_UserColumnName="Notes" type="xs:string" minOccurs="0" />
+              <xs:element name="Impression" msprop:Generator_ColumnVarNameInTable="columnImpression" msprop:Generator_ColumnPropNameInRow="Impression" msprop:Generator_ColumnPropNameInTable="ImpressionColumn" msprop:Generator_UserColumnName="Impression" type="xs:string" minOccurs="0" />
+              <xs:element name="CaseRating" msprop:Generator_ColumnVarNameInTable="columnCaseRating" msprop:Generator_ColumnPropNameInRow="CaseRating" msprop:Generator_ColumnPropNameInTable="CaseRatingColumn" msprop:Generator_UserColumnName="CaseRating" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="ConversType" msprop:Generator_ColumnVarNameInTable="columnConversType" msprop:Generator_ColumnPropNameInRow="ConversType" msprop:Generator_ColumnPropNameInTable="ConversTypeColumn" msprop:Generator_UserColumnName="ConversType" type="xs:string" minOccurs="0" />
+              <xs:element name="Stamped" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnStamped" msprop:Generator_ColumnPropNameInRow="Stamped" msprop:Generator_ColumnPropNameInTable="StampedColumn" msprop:Generator_UserColumnName="Stamped" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MainConversation" />
+      <xs:field xpath="mstns:ConversID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

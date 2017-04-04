@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsSrchResources" targetNamespace="http://www.tempuri.org/dsSrchResources.xsd" xmlns:mstns="http://www.tempuri.org/dsSrchResources.xsd" xmlns="http://www.tempuri.org/dsSrchResources.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsSrchResources" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsSrchResources" msprop:Generator_UserDSName="dsSrchResources">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SrchResource" msprop:Generator_UserTableName="SrchResource" msprop:Generator_RowEvArgName="SrchResourceRowChangeEvent" msprop:Generator_TableVarName="tableSrchResource" msprop:Generator_TablePropName="SrchResource" msprop:Generator_RowDeletingName="SrchResourceRowDeleting" msprop:Generator_RowChangingName="SrchResourceRowChanging" msprop:Generator_RowDeletedName="SrchResourceRowDeleted" msprop:Generator_RowEvHandlerName="SrchResourceRowChangeEventHandler" msprop:Generator_TableClassName="SrchResourceDataTable" msprop:Generator_RowChangedName="SrchResourceRowChanged" msprop:Generator_RowClassName="SrchResourceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ICCResourceID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnICCResourceID" msprop:Generator_ColumnPropNameInRow="ICCResourceID" msprop:Generator_ColumnPropNameInTable="ICCResourceIDColumn" msprop:Generator_UserColumnName="ICCResourceID" type="xs:int" />
+              <xs:element name="ResourceName" msprop:Generator_ColumnVarNameInTable="columnResourceName" msprop:Generator_ColumnPropNameInRow="ResourceName" msprop:Generator_ColumnPropNameInTable="ResourceNameColumn" msprop:Generator_UserColumnName="ResourceName" type="xs:string" minOccurs="0" />
+              <xs:element name="AuthorContact" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnAuthorContact" msprop:Generator_ColumnPropNameInRow="AuthorContact" msprop:Generator_ColumnPropNameInTable="AuthorContactColumn" msprop:Generator_UserColumnName="AuthorContact" type="xs:string" minOccurs="0" />
+              <xs:element name="ResourceType" msprop:Generator_ColumnVarNameInTable="columnResourceType" msprop:Generator_ColumnPropNameInRow="ResourceType" msprop:Generator_ColumnPropNameInTable="ResourceTypeColumn" msprop:Generator_UserColumnName="ResourceType" type="xs:string" minOccurs="0" />
+              <xs:element name="Subtype" msprop:Generator_ColumnVarNameInTable="columnSubtype" msprop:Generator_ColumnPropNameInRow="Subtype" msprop:Generator_ColumnPropNameInTable="SubtypeColumn" msprop:Generator_UserColumnName="Subtype" type="xs:string" minOccurs="0" />
+              <xs:element name="Active" msprop:Generator_ColumnVarNameInTable="columnActive" msprop:Generator_ColumnPropNameInRow="Active" msprop:Generator_ColumnPropNameInTable="ActiveColumn" msprop:Generator_UserColumnName="Active" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Keyword" msprop:Generator_ColumnVarNameInTable="columnKeyword" msprop:Generator_ColumnPropNameInRow="Keyword" msprop:Generator_ColumnPropNameInTable="KeywordColumn" msprop:Generator_UserColumnName="Keyword" type="xs:string" minOccurs="0" />
+              <xs:element name="OnCRGWebsite" msprop:Generator_ColumnVarNameInTable="columnOnCRGWebsite" msprop:Generator_ColumnPropNameInRow="OnCRGWebsite" msprop:Generator_ColumnPropNameInTable="OnCRGWebsiteColumn" msprop:Generator_UserColumnName="OnCRGWebsite" type="xs:string" minOccurs="0" />
+              <xs:element name="cntRecbyCenter" msprop:Generator_ColumnVarNameInTable="columncntRecbyCenter" msprop:Generator_ColumnPropNameInRow="cntRecbyCenter" msprop:Generator_ColumnPropNameInTable="cntRecbyCenterColumn" msprop:Generator_UserColumnName="cntRecbyCenter" type="xs:short" minOccurs="0" />
+              <xs:element name="CntFeedback" msprop:Generator_ColumnVarNameInTable="columnCntFeedback" msprop:Generator_ColumnPropNameInRow="CntFeedback" msprop:Generator_ColumnPropNameInTable="CntFeedbackColumn" msprop:Generator_UserColumnName="CntFeedback" type="xs:short" minOccurs="0" />
+              <xs:element name="cntFunded" msprop:Generator_ColumnVarNameInTable="columncntFunded" msprop:Generator_ColumnPropNameInRow="cntFunded" msprop:Generator_ColumnPropNameInTable="cntFundedColumn" msprop:Generator_UserColumnName="cntFunded" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="key1">
+      <xs:selector xpath=".//mstns:SrchResource" />
+      <xs:field xpath="mstns:ICCResourceID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

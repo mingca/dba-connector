@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsMainCase" targetNamespace="http://www.tempuri.org/dsMainCase.xsd" xmlns:mstns="http://www.tempuri.org/dsMainCase.xsd" xmlns="http://www.tempuri.org/dsMainCase.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsMainCase" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsMainCase" msprop:Generator_UserDSName="dsMainCase">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MainCase" msprop:Generator_UserTableName="MainCase" msprop:Generator_RowEvArgName="MainCaseRowChangeEvent" msprop:Generator_TableVarName="tableMainCase" msprop:Generator_TablePropName="MainCase" msprop:Generator_RowDeletingName="MainCaseRowDeleting" msprop:Generator_RowChangingName="MainCaseRowChanging" msprop:Generator_RowDeletedName="MainCaseRowDeleted" msprop:Generator_RowEvHandlerName="MainCaseRowChangeEventHandler" msprop:Generator_TableClassName="MainCaseDataTable" msprop:Generator_RowChangedName="MainCaseRowChanged" msprop:Generator_RowClassName="MainCaseRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CaseID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnCaseID" msprop:Generator_ColumnPropNameInRow="CaseID" msprop:Generator_ColumnPropNameInTable="CaseIDColumn" msprop:Generator_UserColumnName="CaseID" type="xs:int" />
+              <xs:element name="CaseName" msprop:Generator_ColumnVarNameInTable="columnCaseName" msprop:Generator_ColumnPropNameInRow="CaseName" msprop:Generator_ColumnPropNameInTable="CaseNameColumn" msprop:Generator_UserColumnName="CaseName" type="xs:string" minOccurs="0" />
+              <xs:element name="OrgNum" msprop:Generator_ColumnVarNameInTable="columnOrgNum" msprop:Generator_ColumnPropNameInRow="OrgNum" msprop:Generator_ColumnPropNameInTable="OrgNumColumn" msprop:Generator_UserColumnName="OrgNum" type="xs:int" minOccurs="0" />
+              <xs:element name="StatusNum" msprop:Generator_ColumnVarNameInTable="columnStatusNum" msprop:Generator_ColumnPropNameInRow="StatusNum" msprop:Generator_ColumnPropNameInTable="StatusNumColumn" msprop:Generator_UserColumnName="StatusNum" type="xs:short" minOccurs="0" />
+              <xs:element name="CaseMgrNum" msprop:Generator_ColumnVarNameInTable="columnCaseMgrNum" msprop:Generator_ColumnPropNameInRow="CaseMgrNum" msprop:Generator_ColumnPropNameInTable="CaseMgrNumColumn" msprop:Generator_UserColumnName="CaseMgrNum" type="xs:short" minOccurs="0" />
+              <xs:element name="OpenDate" msprop:Generator_ColumnVarNameInTable="columnOpenDate" msprop:Generator_ColumnPropNameInRow="OpenDate" msprop:Generator_ColumnPropNameInTable="OpenDateColumn" msprop:Generator_UserColumnName="OpenDate" type="xs:date" minOccurs="0" />
+              <xs:element name="CloseDate" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="CloseDate" msprop:Generator_ColumnVarNameInTable="columnCloseDate" msprop:Generator_ColumnPropNameInTable="CloseDateColumn" msprop:Generator_UserColumnName="CloseDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CRGNum" msprop:Generator_ColumnVarNameInTable="columnCRGNum" msprop:Generator_ColumnPropNameInRow="CRGNum" msprop:Generator_ColumnPropNameInTable="CRGNumColumn" msprop:Generator_UserColumnName="CRGNum" type="xs:short" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="NoResources" msprop:Generator_ColumnVarNameInTable="columnNoResources" msprop:Generator_ColumnPropNameInRow="NoResources" msprop:Generator_ColumnPropNameInTable="NoResourcesColumn" msprop:Generator_UserColumnName="NoResources" type="xs:boolean" minOccurs="0" />
+              <xs:element name="FeedbackReceivedDate" msprop:Generator_ColumnVarNameInTable="columnFeedbackReceivedDate" msprop:Generator_ColumnPropNameInRow="FeedbackReceivedDate" msprop:Generator_ColumnPropNameInTable="FeedbackReceivedDateColumn" msprop:Generator_UserColumnName="FeedbackReceivedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Stamped" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnStamped" msprop:Generator_ColumnPropNameInRow="Stamped" msprop:Generator_ColumnPropNameInTable="StampedColumn" msprop:Generator_UserColumnName="Stamped" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="FeedbackRequestedDate" msprop:Generator_ColumnVarNameInTable="columnFeedbackRequestedDate" msprop:Generator_ColumnPropNameInRow="FeedbackRequestedDate" msprop:Generator_ColumnPropNameInTable="FeedbackRequestedDateColumn" msprop:Generator_UserColumnName="FeedbackRequestedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FromCRG" msprop:Generator_ColumnVarNameInTable="columnFromCRG" msprop:Generator_ColumnPropNameInRow="FromCRG" msprop:Generator_ColumnPropNameInTable="FromCRGColumn" msprop:Generator_UserColumnName="FromCRG" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CRGConsultingOrgNum" msprop:Generator_ColumnVarNameInTable="columnCRGConsultingOrgNum" msprop:Generator_ColumnPropNameInRow="CRGConsultingOrgNum" msprop:Generator_ColumnPropNameInTable="CRGConsultingOrgNumColumn" msprop:Generator_UserColumnName="CRGConsultingOrgNum" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MainCase" />
+      <xs:field xpath="mstns:CaseID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

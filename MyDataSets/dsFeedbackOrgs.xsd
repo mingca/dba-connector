@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsFeedbackOrgs" targetNamespace="http://www.tempuri.org/dsFeedbackOrgs.xsd" xmlns:mstns="http://www.tempuri.org/dsFeedbackOrgs.xsd" xmlns="http://www.tempuri.org/dsFeedbackOrgs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsFeedbackOrgs" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsFeedbackOrgs" msprop:Generator_DataSetName="dsFeedbackOrgs">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GetOrgs" msprop:Generator_UserTableName="GetOrgs" msprop:Generator_RowDeletedName="GetOrgsRowDeleted" msprop:Generator_RowChangedName="GetOrgsRowChanged" msprop:Generator_RowClassName="GetOrgsRow" msprop:Generator_RowChangingName="GetOrgsRowChanging" msprop:Generator_RowEvArgName="GetOrgsRowChangeEvent" msprop:Generator_RowEvHandlerName="GetOrgsRowChangeEventHandler" msprop:Generator_TableClassName="GetOrgsDataTable" msprop:Generator_TableVarName="tableGetOrgs" msprop:Generator_RowDeletingName="GetOrgsRowDeleting" msprop:Generator_TablePropName="GetOrgs">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrgID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="OrgID" msprop:Generator_ColumnPropNameInRow="OrgID" msprop:Generator_ColumnVarNameInTable="columnOrgID" msprop:Generator_ColumnPropNameInTable="OrgIDColumn" type="xs:int" />
+              <xs:element name="OrgandCity" msdata:ReadOnly="true" msprop:Generator_UserColumnName="OrgandCity" msprop:Generator_ColumnPropNameInRow="OrgandCity" msprop:Generator_ColumnVarNameInTable="columnOrgandCity" msprop:Generator_ColumnPropNameInTable="OrgandCityColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="luCaseNames" msprop:Generator_UserTableName="luCaseNames" msprop:Generator_RowDeletedName="luCaseNamesRowDeleted" msprop:Generator_RowChangedName="luCaseNamesRowChanged" msprop:Generator_RowClassName="luCaseNamesRow" msprop:Generator_RowChangingName="luCaseNamesRowChanging" msprop:Generator_RowEvArgName="luCaseNamesRowChangeEvent" msprop:Generator_RowEvHandlerName="luCaseNamesRowChangeEventHandler" msprop:Generator_TableClassName="luCaseNamesDataTable" msprop:Generator_TableVarName="tableluCaseNames" msprop:Generator_RowDeletingName="luCaseNamesRowDeleting" msprop:Generator_TablePropName="luCaseNames">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CaseID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="CaseID" msprop:Generator_ColumnVarNameInTable="columnCaseID" msprop:Generator_ColumnPropNameInRow="CaseID" msprop:Generator_ColumnPropNameInTable="CaseIDColumn" type="xs:int" />
+              <xs:element name="CaseName" msprop:Generator_UserColumnName="CaseName" msprop:Generator_ColumnVarNameInTable="columnCaseName" msprop:Generator_ColumnPropNameInRow="CaseName" msprop:Generator_ColumnPropNameInTable="CaseNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrgNum" msprop:Generator_UserColumnName="OrgNum" msprop:Generator_ColumnVarNameInTable="columnOrgNum" msprop:Generator_ColumnPropNameInRow="OrgNum" msprop:Generator_ColumnPropNameInTable="OrgNumColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="StatusName" msprop:Generator_UserColumnName="StatusName" msprop:Generator_ColumnVarNameInTable="columnStatusName" msprop:Generator_ColumnPropNameInRow="StatusName" msprop:Generator_ColumnPropNameInTable="StatusNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="luContactNames" msprop:Generator_UserTableName="luContactNames" msprop:Generator_RowDeletedName="luContactNamesRowDeleted" msprop:Generator_RowChangedName="luContactNamesRowChanged" msprop:Generator_RowClassName="luContactNamesRow" msprop:Generator_RowChangingName="luContactNamesRowChanging" msprop:Generator_RowEvArgName="luContactNamesRowChangeEvent" msprop:Generator_RowEvHandlerName="luContactNamesRowChangeEventHandler" msprop:Generator_TableClassName="luContactNamesDataTable" msprop:Generator_TableVarName="tableluContactNames" msprop:Generator_RowDeletingName="luContactNamesRowDeleting" msprop:Generator_TablePropName="luContactNames">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ContactID" msprop:Generator_UserColumnName="ContactID" msprop:Generator_ColumnVarNameInTable="columnContactID" msprop:Generator_ColumnPropNameInRow="ContactID" msprop:Generator_ColumnPropNameInTable="ContactIDColumn" type="xs:int" />
+              <xs:element name="ContactName" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ContactName" msprop:Generator_ColumnVarNameInTable="columnContactName" msprop:Generator_ColumnPropNameInRow="ContactName" msprop:Generator_ColumnPropNameInTable="ContactNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="63" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContactStaff" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ContactStaff" msprop:Generator_ColumnVarNameInTable="columnContactStaff" msprop:Generator_ColumnPropNameInRow="ContactStaff" msprop:Generator_ColumnPropNameInTable="ContactStaffColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="122" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContactOrgCity" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ContactOrgCity" msprop:Generator_ColumnVarNameInTable="columnContactOrgCity" msprop:Generator_ColumnPropNameInRow="ContactOrgCity" msprop:Generator_ColumnPropNameInTable="ContactOrgCityColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="191" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrgID" msprop:Generator_UserColumnName="OrgID" msprop:Generator_ColumnVarNameInTable="columnOrgID" msprop:Generator_ColumnPropNameInRow="OrgID" msprop:Generator_ColumnPropNameInTable="OrgIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Staff" msprop:Generator_UserColumnName="Staff" msprop:Generator_ColumnVarNameInTable="columnStaff" msprop:Generator_ColumnPropNameInRow="Staff" msprop:Generator_ColumnPropNameInTable="StaffColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FirstName" msprop:Generator_UserColumnName="FirstName" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Lastname" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Lastname" msprop:Generator_ColumnVarNameInTable="columnLastname" msprop:Generator_ColumnPropNameInRow="Lastname" msprop:Generator_ColumnPropNameInTable="LastnameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="31" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Active" msprop:Generator_UserColumnName="Active" msprop:Generator_ColumnVarNameInTable="columnActive" msprop:Generator_ColumnPropNameInRow="Active" msprop:Generator_ColumnPropNameInTable="ActiveColumn" type="xs:boolean" />
+              <xs:element name="PrimaryContact" msprop:Generator_UserColumnName="PrimaryContact" msprop:Generator_ColumnVarNameInTable="columnPrimaryContact" msprop:Generator_ColumnPropNameInRow="PrimaryContact" msprop:Generator_ColumnPropNameInTable="PrimaryContactColumn" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:GetOrgs" />
+      <xs:field xpath="mstns:OrgID" />
+    </xs:unique>
+    <xs:unique name="luCaseNames_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:luCaseNames" />
+      <xs:field xpath="mstns:CaseID" />
+    </xs:unique>
+    <xs:unique name="luContactNames_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:luContactNames" />
+      <xs:field xpath="mstns:ContactID" />
+      <xs:field xpath="mstns:OrgID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

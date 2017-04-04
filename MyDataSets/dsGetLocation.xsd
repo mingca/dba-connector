@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsGetLocation" targetNamespace="http://www.tempuri.org/dsGetLocation.xsd" xmlns:mstns="http://www.tempuri.org/dsGetLocation.xsd" xmlns="http://www.tempuri.org/dsGetLocation.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsGetLocation" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsGetLocation" msprop:Generator_UserDSName="dsGetLocation">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GetResourceLocation" msprop:Generator_TableClassName="GetResourceLocationDataTable" msprop:Generator_RowEvArgName="GetResourceLocationRowChangeEvent" msprop:Generator_TableVarName="tableGetResourceLocation" msprop:Generator_TablePropName="GetResourceLocation" msprop:Generator_RowDeletingName="GetResourceLocationRowDeleting" msprop:Generator_RowChangingName="GetResourceLocationRowChanging" msprop:Generator_RowDeletedName="GetResourceLocationRowDeleted" msprop:Generator_RowClassName="GetResourceLocationRow" msprop:Generator_RowEvHandlerName="GetResourceLocationRowChangeEventHandler" msprop:Generator_RowChangedName="GetResourceLocationRowChanged" msprop:Generator_UserTableName="GetResourceLocation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ResourceLocationID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnResourceLocationID" msprop:Generator_ColumnPropNameInRow="ResourceLocationID" msprop:Generator_ColumnPropNameInTable="ResourceLocationIDColumn" msprop:Generator_UserColumnName="ResourceLocationID" type="xs:int" />
+              <xs:element name="ResourceNum" msprop:Generator_ColumnVarNameInTable="columnResourceNum" msprop:Generator_ColumnPropNameInRow="ResourceNum" msprop:Generator_ColumnPropNameInTable="ResourceNumColumn" msprop:Generator_UserColumnName="ResourceNum" type="xs:int" minOccurs="0" />
+              <xs:element name="SatelliteRegion" msprop:Generator_ColumnVarNameInTable="columnSatelliteRegion" msprop:Generator_ColumnPropNameInRow="SatelliteRegion" msprop:Generator_ColumnPropNameInTable="SatelliteRegionColumn" msprop:Generator_UserColumnName="SatelliteRegion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Location" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnLocation" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnPropNameInTable="LocationColumn" msprop:Generator_UserColumnName="Location" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Keyword1" msprop:Generator_ColumnVarNameInTable="columnKeyword1" msprop:Generator_ColumnPropNameInRow="Keyword1" msprop:Generator_ColumnPropNameInTable="Keyword1Column" msprop:Generator_UserColumnName="Keyword1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LocationStaff" msprop:Generator_ColumnVarNameInTable="columnLocationStaff" msprop:Generator_ColumnPropNameInRow="LocationStaff" msprop:Generator_ColumnPropNameInTable="LocationStaffColumn" msprop:Generator_UserColumnName="LocationStaff" type="xs:string" minOccurs="0" />
+              <xs:element name="LocationEdit" msprop:Generator_ColumnVarNameInTable="columnLocationEdit" msprop:Generator_ColumnPropNameInRow="LocationEdit" msprop:Generator_ColumnPropNameInTable="LocationEditColumn" msprop:Generator_UserColumnName="LocationEdit" type="xs:string" minOccurs="0" />
+              <xs:element name="Edition" msprop:Generator_ColumnVarNameInTable="columnEdition" msprop:Generator_ColumnPropNameInRow="Edition" msprop:Generator_ColumnPropNameInTable="EditionColumn" msprop:Generator_UserColumnName="Edition" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:GetResourceLocation" />
+      <xs:field xpath="mstns:ResourceLocationID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
